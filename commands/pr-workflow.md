@@ -1,6 +1,6 @@
 ---
 description: NON-NEGOTIABLE PR workflow - must be followed for EVERY pull request
-allowed-tools: Read, Glob, Grep, Bash(git:*), Bash(gh:*), Bash(pnpm:*), Bash(npm:*), Bash(yarn:*), Bash(make:*), Bash(mypy:*), Bash(pytest:*), Bash(python:*), Bash(ruff:*), Bash(flake8:*), Bash(sleep:*), mcp__github__*
+allowed-tools: Read, Bash, Glob, Grep, mcp__github__*
 ---
 
 # PR Workflow
