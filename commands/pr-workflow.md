@@ -1,6 +1,11 @@
 ---
 description: NON-NEGOTIABLE PR workflow - must be followed for EVERY pull request
-allowed-tools: Read, Bash, Glob, Grep, mcp__github__*
+allowed-tools:
+  - Read
+  - Bash
+  - Glob
+  - Grep
+  - mcp__github__*
 ---
 
 # PR Workflow

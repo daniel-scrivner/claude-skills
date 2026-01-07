@@ -1,6 +1,13 @@
 ---
 description: Scaffold autonomous AI coding loop (Ralph Wiggum technique) using Claude Code CLI for true autonomy
-allowed-tools: Read, Write, Bash, Glob, Grep, mcp__github__*
+context: fork
+allowed-tools:
+  - Read
+  - Write
+  - Bash
+  - Glob
+  - Grep
+  - mcp__github__*
 argument-hint: [scaffold|run]
 ---
 

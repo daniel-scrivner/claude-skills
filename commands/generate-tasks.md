@@ -1,6 +1,12 @@
 ---
 description: Generate a detailed task list from user requirements for feature implementation
-allowed-tools: Read, Write, Bash(mkdir:*), Bash(ls:*), Glob, Grep
+allowed-tools:
+  - Read
+  - Write
+  - Bash(mkdir:*)
+  - Bash(ls:*)
+  - Glob
+  - Grep
 argument-hint: [feature-description or PRD-path]
 ---
 

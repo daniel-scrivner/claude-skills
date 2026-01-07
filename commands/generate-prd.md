@@ -1,6 +1,10 @@
 ---
 description: Generate a Product Requirements Document (PRD) through structured conversation
-allowed-tools: Read, Write, Bash(mkdir:*), Bash(ls:*)
+allowed-tools:
+  - Read
+  - Write
+  - Bash(mkdir:*)
+  - Bash(ls:*)
 argument-hint: [feature-description]
 ---
 

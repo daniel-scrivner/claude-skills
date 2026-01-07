@@ -265,6 +265,8 @@
 │  Autonomous coding loop using the Ralph Wiggum technique.                    │
 │  Named after Ralph Wiggum — simple but effective.                            │
 │                                                                              │
+│  ⚡ Uses context: fork for isolated sub-agent execution (v2.1.0+)            │
+│                                                                              │
 ├──────────────────────────────────────────────────────────────────────────────┤
 │                                                                              │
 │  QUICK START                                                                 │
@@ -369,13 +371,31 @@
 │  FEATURE              USAGE                                                  │
 │  ─────────────────────────────────────────────────────────────────────────   │
 │  $ARGUMENTS           Captures all user input after command                  │
-│  allowed-tools        Restricts available tools for safety                   │
+│  allowed-tools        Restricts available tools (YAML list or comma-sep)     │
 │  argument-hint        Shows placeholder in command palette                   │
+│  context: fork        Run command in isolated sub-agent (v2.1.0+)            │
+│  user-invocable       Set to false to hide from menu (v2.1.0+)               │
+│  agent                Specify agent type for execution (v2.1.0+)             │
+│  hooks                Define PreToolUse/PostToolUse/Stop hooks (v2.1.0+)     │
 │                                                                              │
 ├──────────────────────────────────────────────────────────────────────────────┤
 │                                                                              │
-│  FRONTMATTER FORMAT                                                          │
-│  ══════════════════                                                          │
+│  FRONTMATTER FORMAT (v2.1.0+)                                                │
+│  ═════════════════════════════                                               │
+│                                                                              │
+│  ---                                                                         │
+│  description: Brief description shown in command palette                     │
+│  context: fork                    # Optional: run in isolated sub-agent      │
+│  allowed-tools:                   # YAML-style list (recommended)            │
+│    - Read                                                                    │
+│    - Write                                                                   │
+│    - Bash(git:*)                                                             │
+│    - mcp__github__*                                                          │
+│  argument-hint: [feature-description]                                        │
+│  ---                                                                         │
+│                                                                              │
+│  LEGACY FORMAT (still supported)                                             │
+│  ════════════════════════════════                                            │
 │                                                                              │
 │  ---                                                                         │
 │  description: Brief description shown in command palette                     │
